@@ -13,5 +13,6 @@ class Coupon < ActiveRecord::Base
   attr_accessible :content, :username
 
   validates :username, :presence => true
+  validates :content, :presence => true
   validates_uniqueness_of :content, :scope => :username
 end

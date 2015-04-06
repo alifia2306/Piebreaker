@@ -13,7 +13,7 @@ I should be able to add new coupons to my account
 		When I create a new coupon without a username
 		Then I should be able to see some error saying username is required
 
-	Scenario: Add a coupon that already exists
+	Scenario: Add a coupon without any content
 		Given Im on the create a coupon page
-		When I create a new coupon that already exists
-		Then I should be able to see some error saying coupon already exists
+		When I create a new coupon without any content
+		Then I should be able to see some error saying content is required

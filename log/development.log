@@ -1245,3 +1245,296 @@ Served asset /coupons.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 20:24:41 -0400
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/owners" for 127.0.0.1 at 2015-04-05 21:49:25 -0400
+Connecting to database specified by database.yml
+Processing by OwnersController#index as HTML
+  [1m[36mOwner Load (0.1ms)[0m  [1mSELECT "owners".* FROM "owners" [0m
+  Rendered owners/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 63.1ms (Views: 33.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 21:49:26 -0400
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/coupons.css?body=1" for 127.0.0.1 at 2015-04-05 21:49:26 -0400
+Served asset /coupons.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/owners.css?body=1" for 127.0.0.1 at 2015-04-05 21:49:26 -0400
+Served asset /owners.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 21:49:26 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:26 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/coupons.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:26 -0400
+Served asset /coupons.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/owners.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:26 -0400
+Served asset /owners.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:26 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/owners/new" for 127.0.0.1 at 2015-04-05 21:49:27 -0400
+Processing by OwnersController#new as HTML
+  Rendered owners/_form.html.erb (17.3ms)
+  Rendered owners/new.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 28.8ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 21:49:27 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/owners.css?body=1" for 127.0.0.1 at 2015-04-05 21:49:27 -0400
+Served asset /owners.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:28 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 21:49:28 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:28 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coupons.css?body=1" for 127.0.0.1 at 2015-04-05 21:49:28 -0400
+Served asset /coupons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coupons.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:28 -0400
+Served asset /coupons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/owners.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:28 -0400
+Served asset /owners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:28 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/owners" for 127.0.0.1 at 2015-04-05 21:49:35 -0400
+Processing by OwnersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TLfkvjY0qzZ0D621Zt5pCAqezoOOY2b1vLzqOxpct5E=", "owner"=>{"username"=>"test", "restaurant_name"=>"s", "address"=>"lmlkl", "password"=>"[FILTERED]", "category"=>"k;k", "plan"=>";kl"}, "commit"=>"Create Owner"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mOwner Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "owners" WHERE "owners"."username" = 'test' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered owners/_form.html.erb (5.2ms)
+  Rendered owners/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 34.5ms (Views: 14.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/coupons.css?body=1" for 127.0.0.1 at 2015-04-05 21:49:35 -0400
+Served asset /coupons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 21:49:35 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 21:49:35 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/owners.css?body=1" for 127.0.0.1 at 2015-04-05 21:49:35 -0400
+Served asset /owners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:35 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coupons.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:35 -0400
+Served asset /coupons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:35 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/owners.js?body=1" for 127.0.0.1 at 2015-04-05 21:49:35 -0400
+Served asset /owners.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateOwners (20150405010419)
+Migrating to CreateCoupons (20150405235107)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (100.1ms)[0m  [1mCREATE TABLE "coupons" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "content" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (65.0ms)[0m  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "restaurant_name" varchar(255), "address" varchar(255), "password" varchar(255), "category" varchar(255), "plan" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (88.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (99.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (98.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150405235107')
+  [1m[36m (99.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150405010419')[0m
+
+
+Started GET "/coupons" for 127.0.0.1 at 2015-04-05 21:58:46 -0400
+Connecting to database specified by database.yml
+Processing by CouponsController#index as HTML
+  [1m[36mCoupon Load (0.1ms)[0m  [1mSELECT "coupons".* FROM "coupons" [0m
+  Rendered coupons/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 54.7ms (Views: 31.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/coupons.css?body=1" for 127.0.0.1 at 2015-04-05 21:58:46 -0400
+Served asset /coupons.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 21:58:46 -0400
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/owners.css?body=1" for 127.0.0.1 at 2015-04-05 21:58:46 -0400
+Served asset /owners.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 21:58:46 -0400
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:46 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coupons.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:46 -0400
+Served asset /coupons.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:46 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/owners.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:46 -0400
+Served asset /owners.js - 304 Not Modified (1ms)
+
+
+Started GET "/coupons/new" for 127.0.0.1 at 2015-04-05 21:58:49 -0400
+Processing by CouponsController#new as HTML
+  Rendered coupons/_form.html.erb (9.6ms)
+  Rendered coupons/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 21.1ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/coupons.css?body=1" for 127.0.0.1 at 2015-04-05 21:58:49 -0400
+Served asset /coupons.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/owners.css?body=1" for 127.0.0.1 at 2015-04-05 21:58:49 -0400
+Served asset /owners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 21:58:49 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:49 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 21:58:49 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coupons.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:49 -0400
+Served asset /coupons.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/owners.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:49 -0400
+Served asset /owners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:49 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/coupons" for 127.0.0.1 at 2015-04-05 21:58:55 -0400
+Processing by CouponsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TLfkvjY0qzZ0D621Zt5pCAqezoOOY2b1vLzqOxpct5E=", "coupon"=>{"username"=>"test3", "content"=>"h"}, "commit"=>"Create Coupon"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCoupon Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "coupons" WHERE ("coupons"."content" = 'h' AND "coupons"."username" = 'test3') LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "coupons" ("content", "created_at", "updated_at", "username") VALUES (?, ?, ?, ?)  [["content", "h"], ["created_at", Mon, 06 Apr 2015 01:58:55 UTC +00:00], ["updated_at", Mon, 06 Apr 2015 01:58:55 UTC +00:00], ["username", "test3"]]
+  [1m[36m (125.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/coupons/3
+Completed 302 Found in 154.2ms (ActiveRecord: 127.0ms)
+
+
+Started GET "/coupons/3" for 127.0.0.1 at 2015-04-05 21:58:55 -0400
+Processing by CouponsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCoupon Load (0.4ms)[0m  SELECT "coupons".* FROM "coupons" WHERE "coupons"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered coupons/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 11.5ms (Views: 9.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/owners.css?body=1" for 127.0.0.1 at 2015-04-05 21:58:55 -0400
+Served asset /owners.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-05 21:58:55 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-05 21:58:55 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:55 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coupons.css?body=1" for 127.0.0.1 at 2015-04-05 21:58:55 -0400
+Served asset /coupons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coupons.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:55 -0400
+Served asset /coupons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/owners.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:55 -0400
+Served asset /owners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-05 21:58:55 -0400
+Served asset /application.js - 304 Not Modified (1ms)

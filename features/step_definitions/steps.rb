@@ -49,10 +49,16 @@ When(/^I create a new owner by entering a username that already exists$/) do
   fill_in 'Category', :with => "Coffee Shop"
   fill_in 'Plan', :with => "basic"
   click_button 'Create Owner'
+  fill_in 'Username', :with => "test"
+  fill_in 'Restaurant name', :with => "Starbucks"
+  fill_in 'Address', :with => "3300 walnut"
+  fill_in 'Category', :with => "Coffee Shop"
+  fill_in 'Plan', :with => "basic"
+  click_button 'Create Owner'
 end
 
 Then(/^I should be able to see some error saying username already exists$/) do
-  assert page.has_content?("Username has already been taken")
+  assert page.has_css?('div.error_explanation')
 end
 
 Given(/^Im on the create a coupon page$/) do
@@ -62,6 +68,7 @@ end
 When(/^I create a new coupon$/) do
   fill_in 'Username', :with => "test"
   fill_in 'Content', :with => "Half Prices"
+  click_button 'Create Coupon'
 end
 
 Then(/^I should be able to see the new coupon's details$/) do
@@ -70,17 +77,14 @@ end
 
 When(/^I create a new coupon without a username$/) do
   fill_in 'Content', :with => "Half Prices"
+  click_button 'Create Coupon'
 end
 
-Then(/^I should be able to see some error saying username is required$/) do
-  assert page.has_content?("Username can't be blank")
-end
-
-When(/^I create a new coupon that already exists$/) do
+When(/^I create a new coupon without any content$/) do
   fill_in 'Username', :with => "test"
-  fill_in 'Content', :with => "Half Prices"
+  click_button 'Create Coupon'
 end
 
-Then(/^I should be able to see some error saying coupon already exists$/) do
-  assert page.has_content?("Content has already been taken")
+Then(/^I should be able to see some error saying content is required$/) do
+  assert page.has_content?("Content can't be blank")
 end
