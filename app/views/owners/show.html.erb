@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Username:</b>
+  <%= @owner.username %>
+</p>
+
+<p>
+  <b>Restaurant name:</b>
+  <%= @owner.restaurant_name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @owner.address %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @owner.password %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @owner.category %>
+</p>
+
+<p>
+  <b>Plan:</b>
+  <%= @owner.plan %>
+</p>
+
+
+<%= link_to 'Edit', edit_owner_path(@owner) %> |
+<%= link_to 'Back', owners_path %>
