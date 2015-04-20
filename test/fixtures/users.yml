@@ -1,0 +1,53 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :integer          not null, primary key
+#  business_id     :string(255)
+#  full_address    :string(255)
+#  categories      :string(255)
+#  city            :string(255)
+#  review_count    :integer
+#  name            :string(255)
+#  state           :string(255)
+#  price_range     :integer
+#  wifi            :boolean
+#  parking         :boolean
+#  delivery        :boolean
+#  outdoor_seating :boolean
+#  rating          :float
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  business_id: MyString
+  full_address: MyString
+  categories: MyString
+  city: MyString
+  review_count: 1
+  name: MyString
+  state: MyString
+  price_range: 1
+  wifi: false
+  parking: false
+  delivery: false
+  outdoor_seating: false
+  rating: 1.5
+
+two:
+  business_id: MyString
+  full_address: MyString
+  categories: MyString
+  city: MyString
+  review_count: 1
+  name: MyString
+  state: MyString
+  price_range: 1
+  wifi: false
+  parking: false
+  delivery: false
+  outdoor_seating: false
+  rating: 1.5

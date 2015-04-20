@@ -20,6 +20,7 @@ class CouponsController < ApplicationController
       format.json { render json: @coupon }
     end
   end
+  
 
   # GET /coupons/new
   # GET /coupons/new.json

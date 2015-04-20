@@ -1,0 +1,48 @@
+<%if @no_selections==true%>
+<p>Please select atleast one restaurant to compare<p>
+
+<% elsif @max_exceed==true%>
+<p>Please select atmost three restaurants to compare</p>
+<%else%>
+
+<h1> Comparison Results</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Full address</th>
+    <th>Categories</th>
+    <th>City</th>
+    <th>Review count</th>
+    <th>State</th>
+    <th>Price range</th>
+    <th>Wifi</th>
+    <th>Parking</th>
+    <th>Delivery</th>
+    <th>Outdoor seating</th>
+    <th>Rating</th>
+    <th>Coupon</th>
+  </tr>
+<tbody>
+
+
+<% @users_list.each do |user|%>
+<tr>
+	<td><%= user.name %></td>
+	<td><%= user.full_address %></td>
+	<td><%= user.categories %></td>
+    <td><%= user.city %></td>
+    <td><%= user.review_count %></td>
+    <td><%= user.state %></td>
+    <td><%= user.price_range %></td>
+    <td><%= user.wifi %></td>
+    <td><%= user.parking %></td>
+    <td><%= user.delivery %></td>
+    <td><%= user.outdoor_seating %></td>
+    <td><%= user.rating %></td>
+    <td><% @coupons_list.shift.each do |c| %>
+    <%= c.content%> 
+    <% end %>
+</td>
+</tr>
+<%end%>
+<%end%>

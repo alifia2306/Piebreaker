@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150405235107) do
+ActiveRecord::Schema.define(:version => 20150418002922) do
 
   create_table "coupons", :force => true do |t|
     t.string   "username"
@@ -27,6 +27,34 @@ ActiveRecord::Schema.define(:version => 20150405235107) do
     t.string   "password"
     t.string   "category"
     t.string   "plan"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "reviews", :force => true do |t|
+    t.string   "review_id"
+    t.integer  "stars"
+    t.string   "date"
+    t.string   "text"
+    t.string   "business_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "business_id"
+    t.string   "full_address"
+    t.string   "categories"
+    t.string   "city"
+    t.integer  "review_count"
+    t.string   "name"
+    t.string   "state"
+    t.integer  "price_range"
+    t.boolean  "wifi"
+    t.boolean  "parking"
+    t.boolean  "delivery"
+    t.boolean  "outdoor_seating"
+    t.float    "rating"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end

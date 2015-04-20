@@ -1,0 +1,48 @@
+<%= form_tag show_results_path, :method => 'get'  do %>
+    <p>City, State, Address</p>
+    <%= text_field_tag :location, params[:location]%>
+    <p>Looking for</p>
+   <%= text_field_tag :search, params[:search]%>
+   <%= submit_tag "Search", :name => nil  %>
+ <% end %>
+
+<% if @loc_empty==true%>
+<p>*Specifying a Location gives better results</p>
+<%end%>
+
+
+<%= form_for('User', :as => 'users', :url => compare_selected_users_path) do |f|%>
+    <%= f.button :submit %>
+<h1>Search Results</h1>
+
+<table>
+  <tr>
+    
+    <th>Name</th>
+    <th>Full address</th>
+    <th>Categories</th>
+    <th>Price range</th>
+    <th>Rating</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<tbody>
+<% @users.each do |user| %>
+  <tr>
+
+    <td class="first-column"><%= check_box_tag 'ids[]',user.id,false,:class=>'table-row-checkbox'%></td>
+    <td><%= user.name %></td>
+    <td><%= user.full_address %></td>
+    <td><%= user.categories %></td>
+    <td><%= user.price_range %></td>
+    <td><%= user.rating %></td>
+    
+    
+  </tr>
+<% end %>
+</tbody>
+</table>
+<%end%>
+
+<br />

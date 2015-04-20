@@ -1,4 +1,14 @@
 Piebreaker::Application.routes.draw do
+  resources :reviews
+
+
+  resources :users do
+    post :compare_selected, :on =>:collection
+  end
+
+  match 'users/show' => 'users#show', :as => :show_results
+  #match 'users/compare' => 'users#compare', :as => :compare_user_list
+
   resources :coupons
 
 
